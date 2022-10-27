@@ -1,0 +1,22 @@
+=begin
+Ruby program to implement set.each method 
+=end
+
+require 'set'
+
+# Creation of new Set.
+Vegetable = Set.new(["potato", "tomato","brinjal","onion"])
+
+Vegetable.add("potato")
+
+Vegetable.add("tomato")
+
+Vegetable.add("Beetroot")
+
+puts "Number of elements in set are #{Vegetable.size()}"
+
+i = 1
+Vegetable.each do |n|
+	puts "#{i} element is #{n}"
+	i = i + 1
+end
